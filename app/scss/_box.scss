@@ -1,0 +1,110 @@
+.rating-box {
+  // Default view
+  background-color: $darkBlue;
+  border-radius: 1.187rem;
+  width: 23rem;
+  height: 26.487rem;
+
+  // Desktop view
+  @include onDesktop {
+    border-radius: 1.875rem;
+    width: 25.8125rem;
+    height: 26.24rem;
+  }
+
+  &__items {
+    // Default view
+    padding: 1.875rem;
+
+    // Desktop view
+    @include onDesktop {
+      padding: 2.125rem;
+    }
+  }
+
+  &__icon {
+    background-color: $blueGray;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__numbers {
+    // Default view
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    // Desktop view
+    @include onDesktop {
+      margin-top: 20px;
+    }
+  }
+
+  &--number {
+    cursor: pointer;
+    color: $lightGrey;
+    background-color: $blueGray;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms ease-in-out;
+
+    // :not(:last-child) {
+    //   margin-right: 3.125rem;
+    // }
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+
+  // onClick style
+  .checked {
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mediumGray;
+    color: $white;
+  }
+
+  &__btn {
+    // Default view
+    cursor: pointer;
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    background-color: $orange;
+    border-radius: 1.562rem;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: "Overpass", sans-serif;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    transition: 300ms ease-in-out;
+
+    // Desktop view
+    @include onDesktop {
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+    }
+
+    &:hover {
+      color: $orange;
+      background-color: $white;
+    }
+  }
+}

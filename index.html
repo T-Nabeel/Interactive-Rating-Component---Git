@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Interactive rating component</title>
+
+  <link rel="stylesheet" href="/dist/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <section class="rating-box">
+
+      <div class="rating-box__items">
+
+        <div class="rating-box__icon">
+          <img src="/images/icon-star.svg" alt="star icon">
+        </div>
+        <h2 class="box__heading">How did we do?</h2>
+        <p class="box__description">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+          <div id="ratingNums" class="rating-box__numbers">
+            <div class="rating-box--number">
+              1
+            </div>
+            <div class="rating-box--number">
+              2
+            </div>
+            <div class="rating-box--number">
+              3
+            </div>
+            <div class="rating-box--number">
+              4
+            </div>
+            <div class="rating-box--number">
+              5
+            </div>
+          </div>
+        <button type="submit" class="rating-box__btn">
+          Submit
+        </button>
+      </div>
+    </section>
+
+    <section class="thankyou-card card-hidden">
+
+      <div class="thankyou-card__items">
+
+        <div class="thankyou-card__image">
+          <img src="/images/illustration-thank-you.svg" alt="star icon">
+        </div>
+        <div class="thankyou-card__answer">
+          You selected <span id="rating"></span> out of 5
+        </div>
+        <h2 class="box__heading">Thank you!</h2>
+        <p class="box__description">
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+        </p>
+
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by Frontend Mentor. Coded by <a href="https://www.frontendmentor.io/profile/t-nabeel" target="_blank">NMT Nabeel</a>.
+    </div>
+
+  </div>
+
+  <script src="/app/js/app.js"></script>
+
+</body>
+
+</html>
