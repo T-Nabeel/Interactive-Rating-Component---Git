@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Interactive Rating Component](https://your-live-site-url.com)
+- Live Site URL: [Interactive Rating Component](https://t-nabeel.github.io/FrontEndMentor-Interactive-Rating-Component/)
 
 ## My process
 
